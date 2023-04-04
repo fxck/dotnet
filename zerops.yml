@@ -7,3 +7,43 @@ dotnet:
       - app
   run:
     start: cd app && dotnet dnet.dll
+
+app1:
+  build:
+    base: [dotnet@6]
+    build:
+      - dotnet build -o app
+    deploy:
+      - app
+  run:
+    start: cd app && dotnet dnet.dll
+
+app2:
+  build:
+    base: [dotnet@6]
+    build:
+      - dotnet build -o app
+    deploy:
+      - app
+  run:
+    start: cd app && dotnet dnet.dll
+
+app3:
+  build:
+    base: [dotnet@6]
+    build:
+      - dotnet build -o app
+    deploy:
+      - app
+  run:
+    start: cd app && dotnet dnet.dll
+
+app4:
+  build:
+    base: [dotnet@6]
+    build:
+      - dotnet build -o app
+    deploy:
+      - app
+  run:
+    start: cd app && dotnet dnet.dll
